@@ -1,0 +1,203 @@
+body{
+	background-color: #eee;
+	background: url(images/s2.jpg);
+	background-position:center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+a:link {
+	color:black;
+	text-decoration: none;
+}
+a:visited {
+	color:black;
+	text-decoration: none;
+}
+/*navbar*/
+.navbar{
+	margin-top: 0px;
+	margin-bottom: 30px;
+	background-color: rgba(193, 56, 50, 0.85);
+	border-width: 0px;
+	border-radius: 16px;
+}
+@media only screen and (max-width: 768px) {
+	.navbar{
+		border-radius: 4px;
+		margin-bottom: 12px;
+	}
+}
+.headmenu p{
+	color: black;
+	font-size: large;
+	padding-bottom: 0px;
+	padding-top: 6px;
+}
+.activeX{
+	background-color: rgba(255, 142, 51, 0.85);
+}
+.a{
+	font-size: large;
+	color: #337179;
+	padding-bottom: 0px;
+	padding-top: 7px;
+}
+.form-control{
+	font-size: large;
+	color: #337179;
+}
+@media only screen and (min-width: 768px) {
+	.b{
+		margin-top: 7px;
+		color: #337179;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.b{
+		display: none;
+	}
+
+}
+/*main*/   
+.main{
+	display: flex;													
+	justify-content: center;
+}
+.jumbotron{
+	padding-bottom: 35px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 1px;
+	font-size: 22px;
+	color: #337179;
+	width: 1000px;
+	border-radius: 20px;
+	background-color: rgba(35, 169, 167, 0.65);
+}
+.header{
+	display: flex;													
+	justify-content: center;
+}
+.panel{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.inst{
+	padding-top: 6px;
+	padding-bottom: 6px;
+	background-color: #337ab7;
+	color: white;
+	margin: 0px 0px 2px 0px;
+	border: 2px solid black;
+}
+.nav-pills{
+	display: flex;
+	justify-content: center;
+}
+.nav-pills li a{	
+	color: #f1f1f1;
+	border: 2px solid black;
+}
+.nav-pills li a:hover{
+	background-color: #23a9a7;
+}
+.btn-lg{
+	background-color: #4caf50;
+}
+.well-lg{
+	background-color: white;
+	color: #723333;
+} 
+/*footer*/
+@media only screen and (min-width: 768px) {
+	#lside{
+		position: fixed;
+		top: 0px;
+		height: 350px;
+		margin-top: 400px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	#rside{
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		height: 350px;
+		margin-top: 400px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.fbar{
+		border-radius: 10px;
+		border: 1px solid black;
+		background-color: rgba(70, 180, 130, 0.75);
+		max-height: 150px;
+	}
+	.fbar p{
+		margin-top: 58px;
+		font-size: 26px;
+		color: #260f0f;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.bar{
+		width: 259px;
+		float: left;
+		position: relative;
+		height: 100%;
+	}
+}
+.fbar{
+	border-radius: 10px;
+	border: 1px solid black;
+	background-color: rgba(193, 56, 50, 0.80);
+	height: 350px;
+}
+@media only screen and (min-width: 768px) {
+	.fbar p{
+		margin-top: 150px;
+		font-size: 26px;
+		color: #260f0f;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.inner{
+		width: 1031px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.fbari{
+		max-height: 100px;
+	}
+	.fbari p{
+		margin-top: 28px;
+		font-size: 22px;
+		color: #723333;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.bari{
+		width: 500px;
+		float: left;
+		left: 0px;
+		position: relative;
+		height: 100%;
+	}
+}
+.fbari{
+	height: 150px;
+	border-radius: 10px;
+	border: 1px solid black;
+	background-color: rgba(241, 241, 241, 0.6);
+}
+@media only screen and (min-width: 768px) {
+	.fbari p{
+		margin-top: 60px;
+		font-size: 26px;
+		color: #723333;
+	}
+}
+
