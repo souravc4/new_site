@@ -1,11 +1,11 @@
 function highlight(el){
-	el.style.backgroundColor = 'rgba(242, 128, 50, 0.95)';
+	el.style.backgroundColor = 'rgba(242, 128, 50, 0.75)';
 }
 function light(el){
-	el.style.backgroundColor = 'rgba(193, 56, 50, 0.80)';
+	el.style.backgroundColor = 'rgba(101, 144, 40, 0.64)';
 }
 function highlighti(el){
-	el.style.backgroundColor = 'rgba(242, 128, 50, 0.95)';
+	el.style.backgroundColor = 'rgba(242, 128, 50, 0.75)';
 }
 function lighti(el){
 	el.style.backgroundColor = 'rgba(241, 241, 241, 0.6)';
