@@ -1,18 +1,19 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home</title>
-	<link rel="icon" href="images/favicon.ico">
+	<link rel="icon" href="images/sunpy_icon.ico">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body onresize="rlogo()" onload="currentNav()">
-
+	
 	<div class="container-fluid">
 		<nav class="navbar navbar-default">     
 			<div class="container"> 
@@ -26,10 +27,10 @@
 				<div class="collapse navbar-collapse" id="mainNavbar">
 					<ul class="nav navbar-nav navbar-center">
 						<li onmouseover="mOver(this)" onmouseout="mOut(this)"><a class="headmenu" href="index.html"><p>Home</p></a></li>
-						<li onmouseover="mOver(this)" onmouseout="mOut(this)"><a class="headmenu" href="#"><p>Blog</p></a></li>
+						<li onmouseover="mOver(this)" onmouseout="mOut(this)"><a class="headmenu" href="blog.html"><p>Blog</p></a></li>
 						<li onmouseover="mOver(this)" onmouseout="mOut(this)"><a class="headmenu" href="#"><p>Team</p></a></li>
 						<li onmouseover="mOver(this)" onmouseout="mOut(this)"><a class="headmenu" href="#"><p>Contact</p></a></li>
-						<li onmouseover="mOver(this)" onmouseout="mOut(this)"><a class="headmenu" href="#"><p>About</p></a></li>
+						<li onmouseover="mOver(this)" onmouseout="mOut(this)"><a class="headmenu" href="about.html"><p>About</p></a></li>
 					</ul>
 					<form class="navbar-form navbar-right">
 						<div class="form-group a">
@@ -44,83 +45,100 @@
 		</nav>
 	</div>
 
-	<div class="main">
-		<div class="jumbotron">
-			<div class="header">
-				<img src="images/sunpy_icon.svg" height="200" width="200">
-				<div class="panel panel-primary">
-					<div class="panel-heading text-center sun">SunPy</div>
-					<div class="panel-body text-center"><p>The community-developed, free and open-source solar data analysis environment for Python.</p></div>
+	<div class="container-fluid">
+		<div class="row">
+
+			<a href="http://docs.sunpy.org/en/stable/">
+				<div class="col-sm-2"> 				
+					<div id="lside">
+						<p class="text-center sidep">Documentation</p>
+					</div>	
 				</div>
-			</div>
-			<div class="panel panel-primary text-center inst">
-				Install SunPy
-			</div>
-			<ul class="nav nav-pills">
-				<li class="active"><a data-toggle="pill" href="#osx">OSX</a></li>
-				<li><a data-toggle="pill" href="#linux">LINUX</a></li>
-				<li><a data-toggle="pill" href="#windows">WINDOWS</a></li>
-			</ul>
-			<div class="tab-content">
-				<div id="osx" class="tab-pane fade in active">
-					<div class="well well-lg text-center">
-						<button type="button" class="btn btn-success btn-lg">Download .dmg</button><p>lorem ipsum dolor sit amet, at phaedrum cotidieque per. Pro cu nobis dolor scriptorem, alia tempor contentiones te mel. Dolor copiosae ei sed. Nec putant suavitate vituperata id. Idque sadipscing id qui, vidit debitis scaevola usu te. Cu per alterum voluptua philosophia, integre equidem mnesarchum pro an. Petentium adversarium eu pri.</p>
+			</a>
+
+			<div class="col-sm-8"> 
+				<div class="header">
+					<img src="images/sunpy_icon.svg" height="200" width="200">
+					<div class="panel panel-primary">
+						<div class="panel-heading text-center sun">SunPy</div>
+						<div class="panel-body text-center"><p>The community-developed, free and open-source solar data analysis environment for Python.</p></div>
 					</div>
 				</div>
-				<div id="linux" class="tab-pane fade">
-					<div class="well well-lg text-center">
-					<button type="button" class="btn btn-success btn-lg">Download .tar</button><p>lorem ipsum dolor sit amet, at phaedrum cotidieque per. Pro cu nobis dolor scriptorem, alia tempor contentiones te mel. Dolor copiosae ei sed. Nec putant suavitate vituperata id. Idque sadipscing id qui, vidit debitis scaevola usu te. Cu per alterum voluptua philosophia, integre equidem mnesarchum pro an. Petentium adversarium eu pri.</p>
+				<div class="panel panel-primary text-center inst">
+					Install SunPy
+				</div>
+				<ul class="nav nav-pills">
+					<li class="active"><a data-toggle="pill" href="#osx">OSX</a></li>
+					<li><a data-toggle="pill" href="#linux">LINUX</a></li>
+					<li><a data-toggle="pill" href="#windows">WINDOWS</a></li>
+				</ul>
+				<div class="tab-content">
+					<div id="osx" class="tab-pane fade in active">
+						<div class="well well-lg text-center">
+							<button type="button" class="btn btn-success btn-lg">Download .dmg</button><p>lorem ipsum dolor sit amet, at phaedrum cotidieque per. Pro cu nobis dolor scriptorem, alia tempor contentiones te mel. Dolor copiosae ei sed. Nec putant suavitate vituperata id. Idque sadipscing id qui, vidit debitis scaevola usu te. Cu per alterum voluptua philosophia, integre equidem mnesarchum pro an. Petentium adversarium eu pri.</p>
+						</div>
+					</div>
+					<div id="linux" class="tab-pane fade">
+						<div class="well well-lg text-center">
+							<button type="button" class="btn btn-success btn-lg">Download .tar</button><p>lorem ipsum dolor sit amet, at phaedrum cotidieque per. Pro cu nobis dolor scriptorem, alia tempor contentiones te mel. Dolor copiosae ei sed. Nec putant suavitate vituperata id. Idque sadipscing id qui, vidit debitis scaevola usu te. Cu per alterum voluptua philosophia, integre equidem mnesarchum pro an. Petentium adversarium eu pri.</p>
+						</div>
+					</div>
+					<div id="windows" class="tab-pane fade">
+						<div class="well well-lg text-center">
+							<button type="button" class="btn btn-success btn-lg">Download .exe</button><p>lorem ipsum dolor sit amet, at phaedrum cotidieque per. Pro cu nobis dolor scriptorem, alia tempor contentiones te mel. Dolor copiosae ei sed. Nec putant suavitate vituperata id. Idque sadipscing id qui, vidit debitis scaevola usu te. Cu per alterum voluptua philosophia, integre equidem mnesarchum pro an. Petentium adversarium eu pri.</p>
+						</div>
 					</div>
 				</div>
-				<div id="windows" class="tab-pane fade">
-					<div class="well well-lg text-center">
-						<button type="button" class="btn btn-success btn-lg">Download .exe</button><p>lorem ipsum dolor sit amet, at phaedrum cotidieque per. Pro cu nobis dolor scriptorem, alia tempor contentiones te mel. Dolor copiosae ei sed. Nec putant suavitate vituperata id. Idque sadipscing id qui, vidit debitis scaevola usu te. Cu per alterum voluptua philosophia, integre equidem mnesarchum pro an. Petentium adversarium eu pri.</p>
+				<hr>
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default panel-danger">
+						<div class="panel-heading" id="panel1">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><p class="panel-title text-center">Get Help&nbsp<span class="caret"></span></p>
+							</a>
+						</div>
+						<div id="collapse1" class="panel-collapse collapse">
+							<div class="panel-body text-center">
+								<h4 style="font-weight: bold; text-decoration: underline;">Documentation</h4>
+								<p style="font-size: 18px;color: black">The SunPy documentation
+									should be your first stop to get your question answered. We strive to provide a rich and comprehensive set of docs. The documentation is included in the code itself
+									which you can access through code reference
+									and we also have a number of guides which take
+									you through specific topics. If you do not find your answer there read on! 
+								</p>
+								<h4 style="font-weight: bold; text-decoration: underline;">Live Chat</h4>
+								<iframe src="https://riot.im/app/#/room/#sunpy-general:matrix.org"></iframe>
+							</div>
+						</div>
 					</div>
-				</div>
+
+					<div class="panel panel-default panel-danger">
+						<div class="panel-heading" id="panel2">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><p class="panel-title text-center">Source Code&nbsp<span class="caret"></span></p></a>
+						</div>
+						<div id="collapse2" class="panel-collapse collapse">
+							<div class="panel-body text-center">
+								<h4 style="font-weight: bold; text-decoration: underline;">Provide Code</h4>
+								<p style="font-size: 18px;color: black">If you are interested in contributing fixes, code or documentation to SunPy please checkout our developer guide. SunPy uses a distributed version control system called Git and the code is hosted on <a href="https://github.com/sunpy/sunpy/" style="text-decoration: underline;">GitHub</a>. To get started create an account on github and fork SunPy then submit your changes via a pull request. If you are unfamiliar with Git and GitHub our developer documentation provides a sample workflow but you can also find lots of tutorials online. Please read up on our <a href="https://github.com/sunpy/sunpy/wiki/Developer-Standards" style="text-decoration: underline;">Coding Standards</a> before getting started. You can browse our <a href="https://github.com/sunpy/sunpy/issues" style="text-decoration: underline;">issue list</a> or our wishlist to find something that you can tackle. Please send a quick email to the dev list or stop by the chat room to let people know what you are planning on working on (see the Help section).
+							</div>
+						</div>
+					</div>
+
+				</div> 
+
 			</div>
+
+			<a href="http://sunpy.org/contribute/">
+				<div class="col-sm-2">
+					<div id="rside">
+						<p class="text-center sidep">Contribute</p>
+					</div>
+				</div>
+			</a>
+
 		</div>
 	</div>
 
-	<div id="lside">
-		<div class="bar outer">
-			<a href="#">
-				<div>
-					<div class="fbar text-center" onmouseover="highlight(this)" onmouseout="light(this)">
-						<p>Documentation</p>
-					</div>
-				</div>
-			</a>
-		</div>
-	</div>
-	<div id="rside">
-		<div class="bar outer">
-			<a href="#">
-				<div>
-					<div class="fbar text-center" onmouseover="highlight(this)" onmouseout="light(this)">
-						<p>Contribute</p>
-					</div>
-				</div>
-			</a>
-		</div>
-	</div>
-	<div class="container inner"> 
-		<div class="bari">
-			<a href="#">
-				<div>
-					<div class="fbari text-center" onmouseover="highlighti(this)" onmouseout="lighti(this)"><p>Get Help</p></div>
-				</div>
-			</a>
-		</div>
-		<div class="bari">
-			<a href="#">
-				<div>
-					<div class="fbari text-center" onmouseover="highlighti(this)" onmouseout="lighti(this)"><p>Source Code</p></div>
-				</div>
-			</a>
-		</div>
-	</div>
-	
-<script src="script/home_script.js"></script>
+<script src="script/navbar.js"></script>
 <script src="script/add_logo.js"></script>
 </body>
 </html>

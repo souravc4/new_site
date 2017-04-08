@@ -1,18 +1,4 @@
-function highlight(el){
-	el.style.backgroundColor = 'rgba(242, 128, 50, 0.75)';
-}
-function light(el){
-	el.style.backgroundColor = 'rgba(101, 144, 40, 0.64)';
-}
-function highlighti(el){
-	el.style.backgroundColor = 'rgba(242, 128, 50, 0.75)';
-}
-function lighti(el){
-	el.style.backgroundColor = 'rgba(241, 241, 241, 0.6)';
-}
-
-
-/*navbar scripts*/
+/* hover script */
 function mOver(ele) {
 	ele.className += " activeX";
 }
@@ -21,7 +7,7 @@ function mOut(ele) {
 	ele.className = ele.className.replace( /(?:^|\s)activeX(?!\S)/g , '' );
 	currentNav(); 
 }
-
+/*navbar active class script*/
 function currentNav(){
 	var title = document.getElementsByTagName("title")[0].innerHTML;
 	var liarray = document.getElementsByClassName("headmenu");
@@ -36,5 +22,3 @@ function currentNav(){
 		}
 	} 
 }
-
-

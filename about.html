@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<link rel="icon" href="images/sunpy_icon.ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="script/japp.js"></script>
+	<script src="script/jctrl.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/about_style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body onresize="rlogo()" onload="currentNav()">
+	<div class="container-fluid">
+		<nav class="navbar navbar-default">     
+			<div class="container"> 
+				<div class="navbar-header" id="headl">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="mainNavbar">
+					<ul class="nav navbar-nav navbar-center">
+						<li onmouseover="mOver(this)" onmouseout="mOut(this)"><a class="headmenu" href="index.html"><p>Home</p></a></li>
+						<li onmouseover="mOver(this)" onmouseout="mOut(this)"><a class="headmenu" href="blog.html"><p>Blog</p></a></li>
+						<li onmouseover="mOver(this)" onmouseout="mOut(this)"><a class="headmenu" href="#"><p>Team</p></a></li>
+						<li onmouseover="mOver(this)" onmouseout="mOut(this)"><a class="headmenu" href="#"><p>Contact</p></a></li>
+						<li onmouseover="mOver(this)" onmouseout="mOut(this)"><a class="headmenu" href="about.html"><p>About</p></a></li>
+					</ul>
+					<form class="navbar-form navbar-right">
+						<div class="form-group a">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default b">
+							<i class="glyphicon glyphicon-search"></i>
+						</button>
+					</form>
+				</div>  
+			</div>
+		</nav>
+	</div>
+
+	<div class="main container-fluid">
+		<div class="jumbotron">
+
+			<div class="header">
+				<h2>Enter names of python packages</h2>
+			</div>
+			
+			<div ng-app="japp" ng-controller="jctrl">
+
+				<div class="form-group">
+					<form>
+						<div class="col-md-2">
+							<label for="ex1">Package 1</label>
+							<input class="form-control" id="ex1" type="text" ng-model="pack1">
+						</div>
+						<div class="col-md-2">
+							<label for="ex2">Package 2</label>
+							<input class="form-control" id="ex2" type="text" ng-model="pack2">
+						</div>
+						<div class="col-md-2">
+							<label for="ex3">Package 3</label>
+							<input class="form-control" id="ex3" type="text" ng-model="pack3">
+						</div>
+						<div class="col-md-2">
+							<label for="ex4">Package 4</label>
+							<input class="form-control" id="ex4" type="text" ng-model="pack4">
+						</div>
+						<div class="col-md-2">
+							<label for="ex5">Package 5</label>
+							<input class="form-control" id="ex5" type="text" ng-model="pack5">
+						</div>
+					</form>
+				</div>
+				<table class="table table-striped table-bordered table-responsive">
+					<thead>
+						<tr>
+							<th class="col-md-2">Package Name</th>
+							<th class="col-md-2">Version</th>
+							<th class="col-md-4">Package URL</th>
+							<th class="col-md-4">Docs URL</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td id="p1name">Enter Package 1 name</td>
+							<td id="p1ver">Enter Package 1 name</td>
+							<td id="p1url">Enter Package 1 name</td>
+							<td id="p1dp">Enter Package 1 name</td>
+						</tr>
+						<tr>
+							<td id="p2name">Enter Package 2 name</td>
+							<td id="p2ver">Enter Package 2 name</td>
+							<td id="p2url">Enter Package 2 name</td>
+							<td id="p2dp">Enter Package 2 name</td>
+						</tr>
+						<tr>
+							<td id="p3name">Enter Package 3 name</td>
+							<td id="p3ver">Enter Package 3 name</td>
+							<td id="p3url">Enter Package 3 name</td>
+							<td id="p3dp">Enter Package 3 name</td>
+						</tr>
+						<tr>
+							<td id="p4name">Enter Package 4 name</td>
+							<td id="p4ver">Enter Package 4 name</td>
+							<td id="p4url">Enter Package 4 name</td>
+							<td id="p4dp">Enter Package 4 name</td>
+						</tr>
+						<tr>
+							<td id="p5name">Enter Package 5 name</td>
+							<td id="p5ver">Enter Package 5 name</td>
+							<td id="p5url">Enter Package 5 name</td>
+							<td id="p5dp">Enter Package 5 name</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="main container-fluid">
+		<div class="jumbotron">
+			<h2 class="text-center header">Our Mission</h2>
+			<div class="well well-lg">SunPy is a community-developed free and open-source software package for solar physics. SunPy is meant to be a free alternative to the SolarSoft data analysis environment which is based on the IDL scientific programming language sold by Exelis. Though SolarSoft is open-source IDL is not and can be prohibitively expensive. The aim of the SunPy project is to provide the software tools necessary so that anyone can analyze solar data. SunPy is written using the Python programming language and is build upon the scientific Python environment which includes the core packages NumPy, SciPy. The development of SunPy is associated with that of Astropy. SunPy was founded on March 28, 2011 by a small group of scientists and developers at the NASA Goddard Space Flight Center. Thanks to the generous support of the ESA Summer of Code and the Google Summer of Code as well as contributors from around the world, SunPy is now a global project and is not associated with any individual institution.
+			</div>
+		</div>
+	</div>
+
+	<div class="main container-fluid">
+		<div class="jumbotron">
+			<h2 class="text-center header">The SunPy Organization</h2>
+			<div class="well well-lg">SunPy (the project) is run by the SunPy organization. This organization was founded and defined by <a href="https://github.com/sunpy/sunpy-SEP/blob/master/SEP-0002.md">this document</a>.
+				Its primary goal is to <i>facilitate and promote the use and
+				development of a community-led, free and open-source solar data-analysis software based
+				on the scientific Python environment</i>. The organization consists of a lead developer,
+				a board of directors, and the developer community.
+				The purpose of the board is to lead the overal structure and direction of SunPy
+				while the lead developer works with the developer community to implement it.
+
+				The SunPy board is composed of the following members (in alphabetical order)
+				<ul>
+					<li>Monica Bobra</li>
+					<li>Steven Christe (chair)</li>
+					<li>Russell Hewett</li>
+					<li>Jack Ireland</li>
+					<li>Stuart Mumford</li>
+					<li>Juan Carlos Martínez Oliveros</li>
+					<li>David Perez-Suarez (vice-chair)</li>
+					<li>Kevin Reardon</li>
+					<li>Sabrina Savage</li>
+					<li>Albert Shih</li>
+				</ul>
+
+				The SunPy Lead Developer is
+				<ul>
+					<li>Stuart Mumford</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="main container-fluid">
+		<div class="jumbotron">
+			<h2 class="text-center header">Community</h2>
+			<div class="well well-lg">Stay up to date on the development of SunPy and interact with the community with these helpful resources.
+			Anyone can and is welcome to get involved. Many methods of interactions are provide and please refer to	our <a href="https://github.com/sunpy/sunpy/wiki/Code-of-Conduct">Code of Conduct</a>.
+			<ul>
+				<li>Read and subscribe to <a href="/blog/">The SunPy Blog</a>.</li>
+				<li>Subscribe to the <a href="http://groups.google.com/group/sunpy">SunPy mailing list</a>.
+				<li>Join us on github and add a feature request or bug report to our <a href="https://github.com/sunpy/sunpy/issues">issue list</a>.</li>
+				<li> Chat with fellow SunPy users or developers on <code>matrix.org</code> , in the <a href="https://riot.im/app/#/room/#sunpy-general:matrix.org">#sunpy-general</a> channel.</li>
+				<li>Join us at one of our weekly meetings. Check out <a href="https://calendar.google.com/calendar/embed?src=g9c9eakg98b5cbogd7m5ta6h8s@group.calendar.google.com">our calendar</a> to find the next one.</li>
+				</ul>
+				We are looking forward to meeting you!
+			</div>
+		</div>
+	</div>
+
+
+
+
+<script src="script/navbar.js"></script>
+<script src="script/add_logo.js"></script>
+</body>
+</html>
