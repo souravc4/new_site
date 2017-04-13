@@ -48,59 +48,87 @@
 	<div class="main container">
 		<div class="jumbotron">
 
-			<h2>January and February News</h2>
-			<p id="bheader">Unified Downloader aka Fido</p>
+			<h2 style="font-size: 42px">SunPy 0.7</h2>
 			<blockquote>
-				<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi augue ipsum, feugiat a tempus non, elementum vitae risus. Nam vel placerat nibh. Aenean vel arcu massa. Aliquam erat volutpat. Morbi ac libero scelerisque, tincidunt est et, malesuada turpis. Pellentesque euismod eros orci, fermentum aliquet lacus mattis fringilla. Maecenas lorem nisl, dignissim ut ipsum eget, dictum ullamcorper ligula. Vestibulum et orci neque. Aliquam aliquam suscipit arcu quis luctus. Integer a maximus elit, ut lobortis metus. Duis magna eros, varius non ante et, sodales gravida nibh. Nam feugiat risus quis hendrerit dictum. Donec sed faucibus nisi.
-				</p>
-				<footer>Posted on 21 March 2016 by XYZ</footer>
+				<p>SunPy 0.7 has arrived! This release is a culmination of about 10 months of work from 27 different people. This release brings many <a href="https://github.com/sunpy/sunpy/blob/0.7/CHANGELOG.md">changes</a>, the highlights are:</p>
+
+<ul>
+  <li>Python 3.4 and 3.5 support. This is the first version of SunPy to support
+Python 3, we recommend that users start to consider moving to Python 3, please
+report any issues you may have.</li>
+  <li>New coordinate framework. The new <code class="highlighter-rouge">sunpy.coordinates</code> module provides a
+high-level interface to converting between different physical coordinate
+systems such as Helioprojective and Heliographic.</li>
+  <li>New <code class="highlighter-rouge">draw_rectangle</code> and <code class="highlighter-rouge">draw_contours</code> helpers for <code class="highlighter-rouge">Map</code>.</li>
+  <li>Support for masks in SunPy <code class="highlighter-rouge">Map</code> and <code class="highlighter-rouge">MapCube</code>.</li>
+</ul>
+
+<p>For this version of SunPy we have started building our <a href="http://conda.pydata.org/docs/">conda</a> packages on the excellent <a href="http://conda-forge.github.io">conda forge</a> service. This means you need to add the conda-forge channel to your conda installation. If you have never installed SunPy before we recommend you follow our <a href="http://docs.sunpy.org/en/stable/installation">installation instruction</a>. If you are upgrading from a previous release run the following two commands if you installed via <code class="highlighter-rouge">conda</code>:
+    conda config –add channels conda-forge
+    conda upgrade sunpy</p>
+
+<p>If you installed via <code class="highlighter-rouge">pip</code> then you can upgrade with:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pip install -U sunpy
+</code></pre>
+</div>
+
+<p>The following excellent people contributed to SunPy 0.7 (a * indicates their first contribution):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Stuart Mumford
+Pritish Chakraborty
+Steven Christe
+Jack Ireland
+Brigitta Sipocz
+David Perez-Suarez
+Punyaslok Pattnaik *
+Michael S Kirk *
+Andrew Leonard
+Alex Hamilton
+Andrew Inglis
+Daniel Ryan
+Sally Dacie *
+Sanskar Modi *
+Albert Y. Shih
+Erik M. Bray
+Larry Manley
+Priyank Lodha *
+Nabil Freij
+Ankit *
+Igor Babuschkin *
+Ole Streicher *
+Simon Liedtke
+Sudarshan Konge *
+Tessa D. Wilkinson *
+Thomas Robitaille
+yasintoda *
+</code></pre>
+</div>
+
+<p>Happy Pythoning!</p>
+				<footer>Posted on 26 May 2016 by Stuart Mumford</footer>
 			</blockquote>
-			<div class="media">
-				<div class="media-left">
-					<img src="images/male.png" class="media-object" style="width:25px">
-				</div>
-				<div class="media-body">
-					<h4 class="media-heading">John Doe <small><i>Posted on 25 March, 2016</i></small></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			
+			<div id="disqus_thread"></div>
+<script>
 
-					<!-- Nested media object -->
-					<div class="media">
-						<div class="media-left">
-							<img src="images/male.png" class="media-object" style="width:25px">
-						</div>
-						<div class="media-body">
-							<h4 class="media-heading">John Doe <small><i>Posted on 26 March, 2016</i></small></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
-						<!-- Nested media object -->
-						<div class="media">
-							<div class="media-left">
-								<img src="images/female.jpg" class="media-object" style="width:25px">
-							</div>
-							<div class="media-body">
-								<h4 class="media-heading">Jane Doe <small><i>Posted on 30 March, 2016</i></small></h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							</div>
-						</div>
+var disqus_config = function () {
+this.page.url = "https://souravc4.github.io/new_site";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "https-souravc4-github-io-new-site-1.disqus.com"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
 
-					</div>
-				</div>
-
-			</div>
-			<form>
-				<div class="form-group">
-					<div class="form-group">
-						<label for="usr">Name:</label>
-						<input type="text" class="form-control" id="usr">
-					</div>
-					<label for="comment">Comment:</label>
-					<textarea class="form-control" rows="2" id="comment"></textarea>
-				</div>
-				<div class="sub">
-				<button type="button" class="btn btn-primary btn-md">Submit</button>
-				</div>
-			</form>
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-souravc4-github-io-new-site-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 			
 		</div>
@@ -109,12 +137,71 @@
 	<div class="main container">
 		<div class="jumbotron">
 
-			<h2>Coming up in March</h2>
-			<p id="bheader">Python in Astronomy 2016</p>
+			<h2 style="font-size: 42px">SunPy Update - March 2016</h2>
 			<blockquote>
-				<p class="text">Etiam molestie ac odio ac condimentum. Aenean lobortis, velit ut dapibus congue, turpis augue finibus justo, non posuere nisi ex ut purus. In eget arcu at lorem cursus dictum sit amet ut neque. Morbi interdum finibus euismod. Nunc id mattis lectus, et malesuada diam. Suspendisse potenti. Vivamus imperdiet lacinia elit, sed consectetur arcu placerat sed. Aliquam ac odio interdum, laoreet odio id, auctor dolor. In accumsan sem in risus maximus tincidunt.
-				</p>
-				<footer>Posted on 21 March 2016 by XYZ</footer>
+				  <p>Hello all,</p>
+
+<p>Once again I am a week late, but here is a quick recap.</p>
+
+<h2 id="february-news">February News</h2>
+
+<h3 id="unified-downloader-aka-fido">Unified Downloader aka Fido</h3>
+
+<p>We had a very successful sprint on the Unified downloader a couple of weeks ago, and progress is being made towards having it ready to be merged. The two main things that need to be completed now are adding extra tests of the clients through the Fido interface and improving the documentation.</p>
+
+<p>We are maintaining a list of issues outstanding on the unidown branch <a href="https://github.com/sunpy/sunpy/issues?q=is%3Aissue+is%3Aopen+label%3Aunidown">here</a> as always feel free to ask for advice if you would like to tackle any of them.  Fido is a key feature of SunPy 0.7 and will permit the development of the LightCurve object.</p>
+
+<h3 id="google-summer-of-code">Google Summer of Code</h3>
+
+<p><a href="http://openastronomy.org">OpenAstronomy</a> got accepted as a GSOC 2016 mentoring Organisation.  This is a significant new development as it indidcates outside recognition of the maturity and quality of the efforts comprising Open Astronomy (SunPy’s previous GSOC students came via the Python Foundation as the mentoring Organisation).  This is the first time in 4 years thathe GSOC Org application SunPy has put in (individually or as a team) has been accepted! What this means for SunPy is that we will get some money per student from Google.</p>
+
+<p>For more information on GSOC see the <a href="http://openastronomy.org">OpenAstronomy</a> website, and it’s not too late to submit project ideas.</p>
+
+<h2 id="coming-up-in-march">Coming up in March</h3>
+
+<h3 id="python-in-astronomy-2016">Python in Astronomy 2016</h3>
+
+<p>The Python in Astronomy conference is running between the 21st and the 25th of March at the e-Science Institute at the University of Washington in Seattle.
+There will a strong SunPy contingent attending, keep your eyes open on social media and on the internet for talks and materials from the conference.
+There will be no meeting on the 21st March due to this conference.</p>
+
+<h3 id="weekly-developer-discussions">Weekly Developer Discussions</h3>
+
+<p>The weekly meetings will be continuing this month, they are at 1700UTC each
+week. We are using Google Hangouts and you can be notified of them by following
+our Google+ page (normally the join link is posted in IRC once the meeting has
+started). These meetings are also recorded and uploaded to YouTube, so you can
+catch up even if you can not attend in person.</p>
+
+<p>Links to coming meetings can are below:</p>
+
+<ul>
+  <li>7/3 <a href="https://plus.google.com/events/cjoctfv55r7220lj0ffdv636tng">https://plus.google.com/events/cjoctfv55r7220lj0ffdv636tng</a></li>
+  <li>14/3 <a href="https://plus.google.com/events/ccinoddrb5mhi8l58vu1ah2ti5s">https://plus.google.com/events/ccinoddrb5mhi8l58vu1ah2ti5s</a></li>
+  <li>21/3 There will be no meeting this week due to Python in Astronomy 2016.</li>
+  <li>28/3 <a href="https://plus.google.com/events/cjiuftsuopsdc7v374qpe1khvl0">https://plus.google.com/events/cjiuftsuopsdc7v374qpe1khvl0</a></li>
+</ul>
+
+<h3 id="reviewing-pull-requests">Reviewing Pull Requests</h3>
+
+<p>As always, reviews on pull requests are always welcome, you don’t have to have
+merge permissions or anything other than a GitHub account to review PRs. You can
+find a list of all the PRs that need reviewing <a href="https://github.com/sunpy/sunpy/labels/%5BReview%5D">here</a>.</p>
+
+<h2 id="getting-in-touch">Getting in touch</h2>
+
+<p>Finally, I wanted to remind everyone about our public communication methods. We
+have two mailing lists, SunPy and sunpy-dev, the main SunPy list is used for
+general questions and announcements, and the sunpy-dev list is used for
+developer discussion and organisational emails. We also have the IRC channel
+(#SunPy on Freenode), which normally has someone hanging out in it, and is an
+excellent place to get some real-time help, or to just come for a chat. We also
+have our Google+ page and a Twitter account.</p>
+
+<p>Happy Pythoning,
+Stuart</p>
+				<footer>Posted on <span class="date">7 March 2016</span> 
+    by <span class="author">Stuart Mumford</span> </footer>
 			</blockquote>
 
 			<div id="disqus_thread"></div>
