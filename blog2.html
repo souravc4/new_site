@@ -1,0 +1,280 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blog</title>
+	<link rel="icon" href="images/sunpy_icon.ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/blog.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body onresize="rlogo()" onload="currentNav()">
+
+	<div class="container-fluid">
+		<nav class="navbar navbar-default">     
+			<div class="container"> 
+				<div class="navbar-header" id="headl">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="mainNavbar">
+					<ul class="nav navbar-nav navbar-center">
+						<li><a class="headmenu" href="index.html"><p>Home</p></a></li>
+						<li><a class="headmenu" href="blog.html"><p>Blog</p></a></li>
+						<li><a class="headmenu" href="#"><p>Team</p></a></li>
+						<li><a class="headmenu" href="#"><p>Contact</p></a></li>
+						<li><a class="headmenu" href="about.html"><p>About</p></a></li>
+					</ul>
+					<form class="navbar-form navbar-right">
+						<div class="form-group a">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default b">
+							<i class="glyphicon glyphicon-search"></i>
+						</button>
+					</form>
+				</div>  
+			</div>
+		</nav>
+	</div>
+
+	<div class="main container">
+		<div class="jumbotron">
+
+			<h2 style="font-size: 42px">SunPy Update - February 2016</h2>
+			<blockquote>
+				 <p>Hello all,</p>
+
+<p>Sorry for the delay to the January update, but it is here at last.</p>
+
+<p>There has been quite a lot going on in the six weeks since the last update, thanks to David for collating most of this news.</p>
+
+<h2 id="january-and-february-news">January and February News</h2>
+
+<h2 id="sunpy">SunPy</h2>
+
+<p>SunPy is using now the latest version of
+<a href="https://github.com/astropy/astropy-helpers">astropy-helpers</a> (v1.1.1) and
+astropy’s <a href="https://github.com/astropy/ci-helpers">ci-helpers</a> which eases the
+maintenance of the package and the tests running.</p>
+
+<p>Few new “badges” has been added now to the readme file in the repository, these
+badges show the status of the repository, like number of downloads, whether the
+development version is passing all its tests or not (via
+<a href="https://travis-ci.org/sunpy/sunpy">Travis</a> and
+<a href="https://ci.appveyor.com/project/sunpy/sunpy">appveyor</a>), the amount of code
+tested, two <a href="https://landscape.io/github/sunpy/sunpy/">quality</a>
+<a href="https://www.quantifiedcode.com/app/project/9edd3e28230840038713e1c7dc3eb141">measurements</a>
+and one that shows
+<a href="http://depsy.org/package/python/sunpy">the impact in academia</a>. All these are
+little helpers to keep an eye on the quality and usage of our beloved project.</p>
+
+<p>One of the important tests problem solved in this last month has been the
+figures tests. Some visualisation is being tested for every new contribution
+people submit - as with any other tests - and if they differ the test suite tells us
+something has changed (or is broken). The figures tested are in the new
+<a href="https://github.com/sunpy/sunpy-figure-tests">sunpy-figure-test</a> repository.
+There you can see the figures and compare them with the previous versions -
+including the environment used to create them.</p>
+
+<h2 id="openastronomy-workshop">OpenAstronomy workshop</h2>
+
+<p>January started with a 5-day workshop which extended a 2-day
+<a href="http://software-carpentry.org/">software-carpentry</a> bootcamp with an
+introduction to Astropy and SunPy. Read more about the success of the workshop
+in the <a href="http://openastronomy.org/2016/01/15/Workshop.html">openastronomy blog</a>.
+This workshop will be repeated in the future, but if you want to organise one don’t hesitate to contact us about it.</p>
+
+<h2 id="comming-up">Comming up</h2>
+
+<h2 id="google-summer-of-code">Google Summer of Code</h2>
+
+<p>SunPy is joining many other teams to apply together under the OpenAstronomy
+umbrella to Google Summer of code. If you want to mentor or help mentoring one
+of the
+<a href="https://github.com/sunpy/sunpy/wiki/GSoC-2016-Ideas-Page">summer projects already proposed</a>
+contact us. If you have some ideas or see that there’s something missing in
+SunPy… tell us and we can create a project plan for that.</p>
+
+<p>If you are a candidate student, please, don’t wait till the last week to get in touch. Get yourself known in the IRC and mailing list… we don’t have all the projects ready yet but they will be soon. Don’t forget that a contribution before applying is compulsory to being accepted.</p>
+
+<h2 id="weekly-developer-discussions">Weekly Developer Discussions</h2>
+
+<p>The weekly meetings will be continuing this month, they are at 1700UTC each
+week. We are using Google Hangouts and you can be notified of them by following
+our Google+ page (normally the join link is posted in IRC once the meeting has
+started). These meetings are also recorded and uploaded to YouTube, so you can
+catch up even if you can not attend in person.</p>
+
+<p>Links to coming meetings can are below:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>15/2 - https://plus.google.com/events/ccqj6t37am6vdn73hvb0njc3fv8 
+22/2 - https://plus.google.com/events/cgi6kd6e97s8mjh9skif8qj0tn8
+29/2 - https://plus.google.com/events/cjt7tb05t7k6ct9cqk4i3lnbjj0
+</code></pre>
+</div>
+
+<h2 id="reviewing-pull-requests">Reviewing Pull Requests</h2>
+
+<p>As always, reviews on pull requests are always welcome, you don’t have to have
+merge permissions or anything other than a GitHub account to review PRs. You can
+find a list of all the PRs that need reviewing here:
+https://github.com/sunpy/sunpy/labels/%5BReview%5D.</p>
+
+<h2 id="getting-in-touch">Getting in touch</h2>
+
+<p>Finally, I wanted to remind everyone about our public communication methods. We
+have two mailing lists, SunPy and sunpy-dev, the main SunPy list is used for
+general questions and announcements, and the sunpy-dev list is used for
+developer discussion and organisational emails. We also have the IRC channel
+(#SunPy on Freenode), which normally has someone hanging out in it, and is an
+excellent place to get some real-time help, or to just come for a chat. We also
+have our Google+ page and a Twitter account.</p>
+
+<p>Happy Pythoning,
+David and Stuart</p>
+				<footer>Posted on 26 May 2016 by Stuart Mumford</footer>
+			</blockquote>
+			
+			<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = "https://souravc4.github.io/new_site";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "https-souravc4-github-io-new-site-1.disqus.com"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-souravc4-github-io-new-site-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+			
+		</div>
+	</div>
+
+	<div class="main container">
+		<div class="jumbotron">
+
+			<h2 style="font-size: 42px">SunPy Update - January 2016</h2>
+			<blockquote>
+				  <p>Hello all,</p>
+
+<p>Sorry for the lack of a December update, the news for December can be summed up as: “Stuart passed his Viva with minor corrections.”</p>
+
+<p>Seeing how we are now in 2016 and the original milestone for 0.7 is the end of January, I hope that many people have made “contribute to SunPy” a new years resolution!!
+Before we can release 0.7 we need a working Python 3 port, and the unidown branch merged, and the Lightcurve factory implemented.</p>
+
+<h2 id="december-news">December News</h2>
+
+<h3 id="-astropy-11"><a name="astropy"></a> Astropy 1.1</h3>
+
+<p>Astropy 1.1 has been released, so you should upgrade your Astropy! Also astropy_helpers 1.1 has been released and David has opened <a href="https://github.com/sunpy/sunpy/pull/1627">PR #1627</a> to update the version in SunPy with the new release, which should hopefully fix issues we were having with sphinx and doctests on Travis.</p>
+
+<h2 id="coming-up-in-january">Coming up in January</h2>
+
+<ul>
+  <li><a href="#workshop">SunPy and Astropy Workshop</a></li>
+  <li><a href="#devmeetings">Weekly Developer Meetings</a></li>
+  <li><a href="#pulls">Reviewing Pull Requests</a></li>
+  <li><a href="#gsoc">Summer of Code Project Ideas</a></li>
+</ul>
+
+<h3 id="-openastronomy-sunpy-and-astropy-workshop"><a name="workshop"></a> OpenAstronomy SunPy and Astropy Workshop</h3>
+
+<p>On 11th to 15th of January at the University of Sheffield there will be a 5 day workshop, with the first two days being a two day Software Carpentry workshop, teaching bash, git and Python. While the rest of the week covers more SunPy and Astropy specific topics. More information can be found on the website: <a href="http://openastronomy.org/2016-01-11-Sheffield/">http://openastronomy.org/2016-01-11-Sheffield/</a></p>
+
+<p>There are still places available, you can register here: <a href="http://goo.gl/forms/Jv5ocjMo71">http://goo.gl/forms/Jv5ocjMo71</a>.</p>
+
+<h3 id="-weekly-developer-discussions"><a name="devmeetings"></a> Weekly Developer Discussions</h3>
+
+<p>The weekly meetings will be continuing this month, they are at 1600UTC each week.
+We are using Google Hangouts and you can be notified of them by following our <a href="https://plus.google.com/+SunpyOrg/posts">Google+ page</a> (normally the join link is posted in IRC once the meeting has started). These meetings are also recorded and uploaded to YouTube, so you can catch up even if you can not attend in person.</p>
+
+<p>Links to November’s meetings can are below:</p>
+
+<ul>
+  <li>4/1 - <a href="https://plus.google.com/events/cr3kkqcvei6nigk65fkl59eh30s">https://plus.google.com/events/cr3kkqcvei6nigk65fkl59eh30s</a></li>
+  <li>11/1 - <a href="https://plus.google.com/events/c7nf7hqubums62940jnrailrmh0">https://plus.google.com/events/c7nf7hqubums62940jnrailrmh0</a></li>
+  <li>18/1 - <a href="https://plus.google.com/events/c78i30ns96p6uvs04mn13fdeap0">https://plus.google.com/events/c78i30ns96p6uvs04mn13fdeap0</a></li>
+  <li>25/1 - <a href="https://plus.google.com/events/cfgp94dc6eerig5q3g4fcqmaepk">https://plus.google.com/events/cfgp94dc6eerig5q3g4fcqmaepk</a></li>
+</ul>
+
+<h2 id="-reviewing-pull-requests"><a name="pulls"></a> Reviewing Pull Requests</h2>
+
+<p>As always, reviews on pull requests are always welcome, you don’t have to have merge permissions or anything other than a GitHub account to review PRs. You can find a list of all the PRs that need reviewing here: <a href="https://github.com/sunpy/sunpy/labels/%5BReview%5D">https://github.com/sunpy/sunpy/labels/%5BReview%5D</a>.</p>
+
+<p>Another easy way to get involved is with labelling issues, if you are interested in doing this but don’t have permissions to label issues on GitHub, swing by the IRC channel and talk to me (Cadair). Issues that are not labelled can be found here: <a href="https://github.com/sunpy/sunpy/issues?utf8=%E2%9C%93&amp;q=is%3Aopen+no%3Alabel">https://github.com/sunpy/sunpy/issues?utf8=%E2%9C%93&amp;q=is%3Aopen+no%3Alabel</a>.</p>
+
+<h2 id="-summer-of-code-project-ideas"><a name="gsoc"></a> Summer of Code Project Ideas</h2>
+
+<p>As usual this year SunPy will be applying for the GSOC and SOCIS summer of code programs. As always, the most important part of these applications is having an interesting project ideas list and people willing to mentor students. If you have any interesting project ideas related to SunPy (they do not have to be on the SunPy code base), then please drop us a line on the mailing list, or edit this wiki page: <a href="https://github.com/sunpy/sunpy/wiki/GSoC-2016-Ideas-Page">https://github.com/sunpy/sunpy/wiki/GSoC-2016-Ideas-Page</a></p>
+
+<p>As we did last year we will be initially applying for GSOC under the OpenAstronomy banner (<a href="http://openastronomy.org">http://openastronomy.org</a>), so suggestions of ways to improve that site, or general involvement with OpenAstronomy would be welcome.</p>
+
+<h2 id="getting-in-touch">Getting in touch</h2>
+
+<p>Finally, I wanted to remind everyone about our public communication methods.
+We have two mailing lists, <a href="https://groups.google.com/forum/#!forum/sunpy">SunPy</a> and <a href="https://groups.google.com/forum/#!forum/sunpy-dev">sunpy-dev</a>, the main SunPy list is used for general questions and announcements, and the sunpy-dev list is used for developer discussion and organisational emails.
+We also have the IRC channel (<a href="https://kiwiirc.com/client/irc.freenode.net/#SunPy">#SunPy</a> on Freenode), which normally has someone hanging out in it, and is an excellent place to get some real-time help, or to just come for a chat.
+We also have our <a href="https://plus.google.com/+SunpyOrg/posts">Google+ page</a> and a <a href="https://twitter.com/sunpyproject">Twitter</a> account.</p>
+
+<p>Happy Pythoning,
+Stuart</p>
+				<footer>Posted on 7 March 2016 by Stuart Mumford<footer>
+			</blockquote>
+
+			<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = "https://souravc4.github.io/new_site";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "https-souravc4-github-io-new-site-1.disqus.com"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-souravc4-github-io-new-site-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<div class="page" style="display: flex;justify-content: center;">
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="blog2.html" class="active">2</a>
+  <a href="#">&raquo;</a>
+</div>
+</div>
+                                
+		</div>
+	</div>
+
+	
+
+
+<script src="script/navbar.js"></script>
+<script src="script/add_logo.js"></script>
+</body>
+</html>
