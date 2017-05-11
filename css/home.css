@@ -166,11 +166,3 @@ box-shadow: 0 3px 0px 0px #ff8e33;
 	margin-top: 25px;
 	}
 }
-.notice{
-	top: 0;
-	right: 0;
-	margin: 0px;
-}
-.notice a:hover{
-	color: blue;
-}
